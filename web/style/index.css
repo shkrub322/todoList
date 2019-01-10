@@ -1,0 +1,46 @@
+body{
+    min-height: 100vh;
+}
+
+.content{
+    margin-top: 40px; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+}
+
+.inner{
+    margin-top: 40px; 
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+}
+
+header{
+    color: white;
+    background-color: #59669A;
+}
+
+button{
+    margin: 5px;
+    margin-top: 0;
+}
+
+.note{
+    margin-bottom: 7px;
+}
+
+.create-note{
+    margin-bottom: 20px;
+}
+
+header p{
+    margin-right: 0;
+    margin-left: auto;
+}
+
+header p:hover{
+    cursor: pointer;
+    color: grey;
+}
+

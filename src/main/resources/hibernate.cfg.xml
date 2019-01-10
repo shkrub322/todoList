@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="hibernate.connection.datasource">java:/comp/env/jdbc/postgres</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQL9Dialect</property>
+    <property name="connection.url">jdbc:postgresql://localhost:5432/todolist</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+      <mapping class="com.shkrub.entities.Note"/>
+    <mapping class="com.shkrub.entities.Users"/>
+      <mapping class="com.shkrub.entities.UserRoles"/>
+  </session-factory>
+</hibernate-configuration>

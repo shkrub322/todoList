@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context path="/todoList">
+    <ResourceLink name="jdbc/postgres"
+                  global="jdbc/postgres"
+                  type="javax.sql.DataSource" />
+
+    <Realm className="org.apache.catalina.realm.DataSourceRealm" debug="99"
+           driverName="org.postgresql.Driver"
+           dataSourceName="jdbc/postgres"
+           userTable="users" userNameCol="username" userCredCol="password"
+           userRoleTable="user_roles" roleNameCol="role" digest="MD5"/>
+</Context>
